@@ -28,7 +28,7 @@ namespace ORJ.TaskToDo.Persistence.Producer
             var json = JsonConvert.SerializeObject(message);
             var body = Encoding.UTF8.GetBytes(json);
 
-            channel.BasicPublish(exchange: "tarefa", routingKey: "tarefa", body: body);
+            channel.BasicPublish(exchange: "", routingKey: "tarefa", body: body);
 
         }
     }
