@@ -7,7 +7,6 @@ namespace ORJ.TaskToDo.Application.UseCases.Tarefas.Update
         public UpdateValidator()
         {
             RuleFor(x => x.Description).NotEmpty().MaximumLength(200);
-            RuleFor(x => x.Active).NotEmpty();
         }
     }
 }
